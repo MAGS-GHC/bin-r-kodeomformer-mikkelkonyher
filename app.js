@@ -24,7 +24,7 @@ function update() {
    }
 
    console.log(binaryNumber);
-   document.getElementById("binaryResult").innerHTML = "Binary representation: " + binaryNumber;
+   document.getElementById("binaryResult").innerHTML = "Oct 1: " + binaryNumber;
    binaryNumber ="";
   
   
@@ -47,6 +47,7 @@ function update2() {
    }
 
    console.log(binaryNumber2);
+   document.getElementById("binaryResult2").innerHTML = "Oct 2: " + binaryNumber2;
    binaryNumber2 ="";
   
 }
@@ -68,6 +69,7 @@ function update3() {
    }
 
    console.log(binaryNumber3);
+   document.getElementById("binaryResult3").innerHTML = "Oct 4: " + binaryNumber3;
    binaryNumber3 ="";
   
 }
@@ -89,6 +91,7 @@ function update4() {
    }
 
    console.log(binaryNumber4);
+   document.getElementById("binaryResult4").innerHTML = "Oct 4: " + binaryNumber4;
    binaryNumber4 ="";
   
 }
