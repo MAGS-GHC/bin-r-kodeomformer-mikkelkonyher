@@ -7,21 +7,21 @@ let binaryNumber = "";
 function update() {
    ipAdress1 = document.getElementById("ip1").value
    console.log(ipAdress1);
-   if(ipAdress1 >= 128){
-      ipAdress1 -= 128;
-      binaryNumber += "1"
-      
-   } else {binaryNumber ="0";
-}
-if (ipAdress1 >= 64){
-   ipAdress1 -= 64;
-   binaryNumber += "1"
-} else{binaryNumber="0";
-}
-console.log(binaryNumber);
-binaryNumber ="";
+
+   for(let i = 128; i >= 1; i /=2){
+      if (ipAdress1 >= i){
+         ipAdress1 -= i;
+         binaryNumber += "1";
+      }else { binaryNumber += 0;
+      }
+
+   }
+
+   console.log(binaryNumber);
+  
 }
 
 
 //få det i et loop
+128,64,32,16,8,4,2,1
 
