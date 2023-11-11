@@ -5,8 +5,9 @@ let ipAdress4 = document.getElementById("ip4").value;
 let binaryIp = document.getElementById("binær1").value;
 let binaryNumber = "";
 let resultBinary = "";
-let ipToBinary = "";
-const powerOF = [128,64,32,16,8,4,2,1];
+const array1 = [128,64,32,16,8,4,2,1];
+deciSum = 0;
+let dSum1 = 
 
 //få det i et loop. Tjek hver iteration
 128,64,32,16,8,4,2,1
@@ -95,18 +96,28 @@ function update4() {
    }
 
    console.log(binaryNumber);
-   resultBinary += binaryNumber + "."
+   resultBinary += binaryNumber
    binaryNumber ="";
   
 }
-
-
-
-
 
 
 function resultat1(){
    document.getElementById("binaryResult").innerHTML = "Binary Representation: " + resultBinary;
    console.log();
 
+}
+
+// Binær til IP
+
+//Problem: Hvordan ser man fx. 11111111 som 8 individuelle tal og ikke et stort tal, hvis man fx. vil loope hver bit i et array. 
+// for(let i = 0; i< array1.length i++) Måske??
+// 
+
+function deci(){
+
+   for(let i = 0; i < 8; i ++){
+      deciSum += binaryVal[i] * 2 ** powerOf[i];
+      
+      }
 }
