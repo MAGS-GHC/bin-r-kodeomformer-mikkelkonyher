@@ -57,13 +57,11 @@ step="1"
 />
 
 </form>
-<button onclick="update();update2();update3();update4();">click</button>
-<p >Binary representation:</p>
+<button onclick="update();update2();update3();update4();resultat1();">click</button>
 
-<p id="binaryResult">Oct 1:</p>
-<p id="binaryResult2">Oct 2:</p>
-<p id="binaryResult3">Oct 3:</p>
-<p id="binaryResult4">Oct 4:</p>
+
+<p id="binaryResult">Binary representation:</p>
+
 
 
 
@@ -71,13 +69,15 @@ step="1"
 
 <form>
 
-<label for = "binær1"></label>
 <input
+value="11111111"
 type="number"
 name="binær1"
 id ="binær1"
-placeholder="11111111.00000000.00000000.00000001" />
+placeholder="11111111.00000000.00000000.00000001"
+ />
 
+<button onclick="binaryUpdate();">click</button>
 <p>IP Adress:</p>  
 </form>
 
