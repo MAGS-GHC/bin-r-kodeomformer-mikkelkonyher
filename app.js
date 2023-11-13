@@ -5,9 +5,9 @@ let ipAdress4 = document.getElementById("ip4").value;
 let binaryVal = document.getElementById("binær1").value;
 let binaryNumber = "";
 let resultBinary = "";
-let resultDeci = "";
 const powerOf = [7,6,5,4,3,2,1,0]
 let deciSum = 0;
+let = resultDeci = "";
 
 //få det i et loop. Tjek hver iteration
 128,64,32,16,8,4,2,1
@@ -109,26 +109,30 @@ function resultat1(){
 
 }
 
+function resultat2(){
+   document.getElementById("ipDeci").innerHTML = "IP Adress: " + resultDeci
+   console.log()
+}
+
 // Binær til IP
 
 //Problem: Hvordan ser man fx. 11111111 som 8 individuelle tal og ikke et stort tal, hvis man fx. vil loope hver bit i et array. 
 // for(let i = 0; i< array1.length i++) Måske??
-// 
-
-//Hvorfor *2 ** ?
 // hvordan får jeg value til binaryVal ind ?
 // Hvordan skal html se ud?
-//power of skal være 7,6,5 etc.?
-// 
+// hvordan ser den binaryVal som et array ?
+//Lav fire inputs ligesom ved ip til binary ?
+// Vi har ikke noget der clearer input felt 
 
 function deciConverter(){
    binaryVal = document.getElementById("binær1").value
-   console.log(binaryVal)
+   console.log(binaryVal);
 
-   for(let i = 0; i < 8; i ++){
+   for(let i = 0; i < 8; i++){
    deciSum += binaryVal[i] * 2 ** powerOf[i];
   
  }
  console.log(deciSum);
+ resultDeci += deciSum
 
 }
