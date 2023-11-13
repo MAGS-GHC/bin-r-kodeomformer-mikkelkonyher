@@ -128,8 +128,7 @@ function resultat2(){
 //Problem: Hvordan ser man fx. 11111111 som 8 individuelle tal og ikke et stort tal, hvis man fx. vil loope hver bit i et array. 
 // for(let i = 0; i< array1.length i++) Måske??
 // hvordan ser den binaryVal som et array ?
-//Lav fire inputs ligesom ved ip til binary ? Hvordan får man alt til at stå i et felt? 
-// Vi har ikke noget der clearer input felt 
+
 
 function deciConverter(){
    deciSum = 0;
@@ -149,7 +148,7 @@ function deciConverter(){
 }
 
 function deciConverter2(){
-   
+   deciSum2 = 0;
    binaryVal2 = document.getElementById("binær2").value
    console.log(binaryVal2);
 
@@ -159,14 +158,11 @@ function deciConverter2(){
  }
  console.log(deciSum2);
  resultDeci += deciSum2 + "."
- 
- 
-
- 
+  
 }
 
 function deciConverter3(){
-   
+   deciSum3 = 0;
    binaryVal3 = document.getElementById("binær3").value
    console.log(binaryVal3);
 
@@ -183,7 +179,7 @@ function deciConverter3(){
 }
 
 function deciConverter4(){
-   
+   deciSum4 = 0;
    binaryVal4 = document.getElementById("binær4").value
    console.log(binaryVal4);
 
@@ -195,6 +191,5 @@ function deciConverter4(){
  resultDeci += deciSum4 + "."
  
  
-
  
 }
