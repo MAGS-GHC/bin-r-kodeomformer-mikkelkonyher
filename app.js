@@ -2,12 +2,12 @@ let ipAdress1 = document.getElementById("ip1").value;
 let ipAdress2 = document.getElementById("ip2").value;
 let ipAdress3 = document.getElementById("ip3").value;
 let ipAdress4 = document.getElementById("ip4").value;
-let binaryIp = document.getElementById("binær1").value;
+let binaryVal = document.getElementById("binær1").value;
 let binaryNumber = "";
 let resultBinary = "";
-const array1 = [128,64,32,16,8,4,2,1];
-deciSum = 0;
-let dSum1 = 
+let resultDeci = "";
+const powerOf = [7,6,5,4,3,2,1,0]
+let deciSum = 0;
 
 //få det i et loop. Tjek hver iteration
 128,64,32,16,8,4,2,1
@@ -30,7 +30,7 @@ function update() {
 
    console.log(binaryNumber);
    resultBinary += binaryNumber + "."
-    binaryNumber ="";
+    binaryNumber ="";// Clearer input felt
   
   
 }
@@ -97,10 +97,11 @@ function update4() {
 
    console.log(binaryNumber);
    resultBinary += binaryNumber
-   binaryNumber ="";
+   binaryNumber =""; 
   
 }
 
+// Funktion der sørger for at holde hele binærtallet i en linje
 
 function resultat1(){
    document.getElementById("binaryResult").innerHTML = "Binary Representation: " + resultBinary;
@@ -114,10 +115,20 @@ function resultat1(){
 // for(let i = 0; i< array1.length i++) Måske??
 // 
 
-function deci(){
+//Hvorfor *2 ** ?
+// hvordan får jeg value til binaryVal ind ?
+// Hvordan skal html se ud?
+//power of skal være 7,6,5 etc.?
+// 
+
+function deciConverter(){
+   binaryVal = document.getElementById("binær1").value
+   console.log(binaryVal)
 
    for(let i = 0; i < 8; i ++){
-      deciSum += binaryVal[i] * 2 ** powerOf[i];
-      
-      }
+   deciSum += binaryVal[i] * 2 ** powerOf[i];
+  
+ }
+ console.log(deciSum);
+
 }
