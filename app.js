@@ -6,12 +6,19 @@ let binaryNumber = "";
 let resultBinary = "";
 
 let binaryVal = document.getElementById("binær1").value;
+let binaryVal2 = document.getElementById("binær2").value;
+let binaryVal3 = document.getElementById("binær3").value;
+let binaryVal4 = document.getElementById("binær4").value;
 const powerOf = [7,6,5,4,3,2,1,0]
 let deciSum = 0;
-let = resultDeci = "";
+let deciSum2 = 0;
+let deciSum3 = 0;
+let deciSum4 = 0;
+let resultDeci = "";
+
 
 //få det i et loop. Tjek hver iteration
-128,64,32,16,8,4,2,1
+//128,64,32,16,8,4,2,1
 
 //IP 1
 
@@ -124,6 +131,8 @@ function resultat2(){
 // Vi har ikke noget der clearer input felt 
 
 function deciConverter(){
+   deciSum = 0;
+   resultDeci = "";
    binaryVal = document.getElementById("binær1").value
    console.log(binaryVal);
 
@@ -134,4 +143,57 @@ function deciConverter(){
  console.log(deciSum);
  resultDeci += deciSum + "."
 
+
+
+}
+
+function deciConverter2(){
+   
+   binaryVal2 = document.getElementById("binær2").value
+   console.log(binaryVal2);
+
+   for(let i = 0; i < 8; i++){
+   deciSum2 += binaryVal2[i] * 2 ** powerOf[i];
+  
+ }
+ console.log(deciSum2);
+ resultDeci += deciSum2 + "."
+ 
+ 
+
+ 
+}
+
+function deciConverter3(){
+   
+   binaryVal3 = document.getElementById("binær3").value
+   console.log(binaryVal3);
+
+   for(let i = 0; i < 8; i++){
+   deciSum3 += binaryVal3[i] * 2 ** powerOf[i];
+  
+ }
+ console.log(deciSum3);
+ resultDeci += deciSum3 + "."
+ 
+ 
+
+ 
+}
+
+function deciConverter4(){
+   
+   binaryVal4 = document.getElementById("binær4").value
+   console.log(binaryVal4);
+
+   for(let i = 0; i < 8; i++){
+   deciSum4 += binaryVal4[i] * 2 ** powerOf[i];
+  
+ }
+ console.log(deciSum4);
+ resultDeci += deciSum4 + "."
+ 
+ 
+
+ 
 }
