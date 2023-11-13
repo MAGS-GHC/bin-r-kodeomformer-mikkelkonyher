@@ -2,9 +2,10 @@ let ipAdress1 = document.getElementById("ip1").value;
 let ipAdress2 = document.getElementById("ip2").value;
 let ipAdress3 = document.getElementById("ip3").value;
 let ipAdress4 = document.getElementById("ip4").value;
-let binaryVal = document.getElementById("binær1").value;
 let binaryNumber = "";
 let resultBinary = "";
+
+let binaryVal = document.getElementById("binær1").value;
 const powerOf = [7,6,5,4,3,2,1,0]
 let deciSum = 0;
 let = resultDeci = "";
@@ -101,7 +102,7 @@ function update4() {
   
 }
 
-// Funktion der sørger for at holde hele binærtallet i en linje
+// Funktioner der sørger for at holde hele binærtallet i en linje
 
 function resultat1(){
    document.getElementById("binaryResult").innerHTML = "Binary Representation: " + resultBinary;
@@ -111,17 +112,15 @@ function resultat1(){
 
 function resultat2(){
    document.getElementById("ipDeci").innerHTML = "IP Adress: " + resultDeci
-   console.log()
+   console.log();
 }
 
 // Binær til IP
 
 //Problem: Hvordan ser man fx. 11111111 som 8 individuelle tal og ikke et stort tal, hvis man fx. vil loope hver bit i et array. 
 // for(let i = 0; i< array1.length i++) Måske??
-// hvordan får jeg value til binaryVal ind ?
-// Hvordan skal html se ud?
 // hvordan ser den binaryVal som et array ?
-//Lav fire inputs ligesom ved ip til binary ?
+//Lav fire inputs ligesom ved ip til binary ? Hvordan får man alt til at stå i et felt? 
 // Vi har ikke noget der clearer input felt 
 
 function deciConverter(){
@@ -133,6 +132,6 @@ function deciConverter(){
   
  }
  console.log(deciSum);
- resultDeci += deciSum
+ resultDeci += deciSum + "."
 
 }
