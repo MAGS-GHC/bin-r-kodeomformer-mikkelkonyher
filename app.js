@@ -23,6 +23,7 @@ let resultDeci = "";
 //IP 1
 
 function update() {
+   resultBinary = "";
    ipAdress1 = document.getElementById("ip1").value
    console.log(ipAdress1);
    
@@ -38,7 +39,7 @@ function update() {
 
    console.log(binaryNumber);
    resultBinary += binaryNumber + "."
-    binaryNumber ="";// Clearer input felt
+   binaryNumber ="";// Clearer input felt
   
   
 }
